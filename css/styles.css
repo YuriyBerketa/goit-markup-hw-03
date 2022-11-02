@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+ *, ::before, ::after {
+    box-sizing: inherit;
+ }
+
 :root {
     --background-color: #F5F5F5;
     --first-color: #212121;
