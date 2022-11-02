@@ -62,9 +62,9 @@ body {
 .link.current {
     color: var(--third-color);
 }
-.navi-list li {
+/* .navi-list li {
     display: flex;
-}
+} */
 .navi-list,
 .connect-list {
   color: var(--first-color);
@@ -93,7 +93,7 @@ body {
   line-height: 1.2;
 }
 .navi-list {
-  display: flex;
+  /* display: flex; */
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -105,7 +105,7 @@ body {
 }
 
 .connect-list {
-  display: flex;
+  /* display: flex; */
   margin-left: auto;
 
   color: var(--secondary-color);
@@ -182,8 +182,16 @@ body {
 
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+.benefits-section {
+    display: flex;
+    gap: 30px;
+}
+.benefits-section {
+    flex-basis: ((100%-90px) / 4);
+}
 
 .feature-title {
   font-size: 0;
