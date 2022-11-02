@@ -34,7 +34,7 @@ body {
   .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -57,7 +57,9 @@ body {
   padding: 0px;
   text-decoration: none;
 }
-
+.link.current {
+    color: var(--third-color);
+}
 .navi-list,
 .connect-list {
   color: var(--first-color);
@@ -116,6 +118,7 @@ body {
 .hero {
   background-color: var(--background-footer-color);
   text-align: center;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 280px;
 }
