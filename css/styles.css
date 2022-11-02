@@ -43,6 +43,7 @@ body {
 .logo,
 .studio {
   text-decoration: none;
+  /* padding-top: 24px; */
 }
 
 .navi-list,
@@ -61,10 +62,13 @@ body {
 .link.current {
     color: var(--third-color);
 }
+.navi-list li {
+    display: flex;
+}
 .navi-list,
 .connect-list {
   color: var(--first-color);
-}
+  }
 
 .navi-list:hover,
 .navi-list:focus,
@@ -278,7 +282,20 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 }
 .footer {
   background-color: var(--background-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.add-list {
+    margin-top: 20px;
+}
+.add-list li {
+    margin-bottom: 9px;
+}
+.add-list li:last-child {
+    margin-bottom: 0;
+}
+
 .studio-footer {
   color: var(--main-color);
   font-family: Raleway, sans-serif;
