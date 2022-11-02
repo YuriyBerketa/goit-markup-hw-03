@@ -1,7 +1,8 @@
 html {
     box-sizing: border-box;
 }
- *, ::before, ::after {
+ *,
+::before, ::after {
     box-sizing: inherit;
  }
 
@@ -21,6 +22,15 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
 }
 .logo, .studio {
     text-decoration: none;
