@@ -31,14 +31,22 @@ body {
     margin: 0;
     padding: 0;
   }
+  a {
+    text-decoration: none;
+  }
   .container {
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     margin: 0 auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo,
 .studio {
@@ -65,15 +73,17 @@ body {
 /* .navi-list li {
     display: flex;
 } */
-.navi-list,
-.connect-list {
+.navi-link {
   color: var(--first-color);
   }
 
-.navi-list:hover,
-.navi-list:focus,
-.connect-list:hover,
-.connect-list:focus {
+  .connect-link {
+    color: var(--secondary-color);
+  }
+.navi-link:hover,
+.navi-link:focus,
+.connect-link:hover,
+.connect-link:focus {
   color: var(--third-color);
 }
 
@@ -93,9 +103,9 @@ body {
   line-height: 1.2;
 }
 .navi-list {
-  /* display: flex; */
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 
   color: var(--first-color);
   font-weight: 500;
@@ -103,9 +113,20 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.navi-link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.navi-list li {
+  margin-right: 50px;
+}
+.navi-list li:last-child {
+margin-right: 0;
+}
 
 .connect-list {
-  /* display: flex; */
+  display: flex;
   margin-left: auto;
 
   color: var(--secondary-color);
@@ -114,6 +135,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
 .connect-list li {
   margin-left: 50px;
 }
